@@ -21,7 +21,8 @@ hr {
 
 .container {
   background-color: #dbdbdb;
-  margin-top: 40px;
+  float: none;
+  margin: 0 auto;
 }
 
 #title {
