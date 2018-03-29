@@ -1,17 +1,22 @@
-body {
-  margin-left: 15%;
-  width: 70%;
-  font-family: sans-serif;
-  background-color: #e8e8e8;
+/*
+
+This document is written in BEM.
+Block = .block
+Element = .block__element
+Modifier = .block__element--modifier || .block--modifier
+
+Bootstrap library is also used in this document.
+
+*/
+
+/* Block ******************************************************************/
+.container {
+  background-color: #dbdbdb;
+  float: none;
+  margin: 0 auto;
 }
 
-ul {
-  font-size: 16px;
-  width: 60%;
-  text-align: left;
-}
-
-hr {
+.horizontalLine {
   background-color: #dbdbdb;
   height: 3px;
   width: 160%;
@@ -19,21 +24,30 @@ hr {
   left: -30%
 }
 
-.container {
-  background-color: #dbdbdb;
-  float: none;
-  margin: 0 auto;
+/* Element ****************************************************************/
+.body__background {
+  width: 70%;
+  font-family: sans-serif;
+  background-color: #e8e8e8;
 }
 
-#title {
+.container__list {
+  font-size: 16px;
+  width: 60%;
+  text-align: left;
+}
+
+.container__title {
   margin-top: 50px;
 }
 
-#picFrederick1 {
+.container__image {
   width: 90%;
 }
 
-#fbdesk {
+/* Modifier ***************************************************************/
+
+.container__image--small {
   width: 15%;
   margin-top: 30px;
   margin-bottom: 30px;
